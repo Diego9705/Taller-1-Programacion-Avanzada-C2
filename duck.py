@@ -1,5 +1,5 @@
 #Interface
-def IFlyBehavior():
+class IFlyBehavior():
     def fly():
         pass
 
@@ -18,13 +18,13 @@ class Duck:
     def perform_Fly(self):
         self._fly_behavior.fly()
 
-    def swim():
+    def swim(self):
         print("Nado")
 
-    def quack():
+    def quack(self):
         print("Quack")
 
-    def display():
+    def display(self):
         print("Soy un pato")
 
 
@@ -34,7 +34,7 @@ class MallarDuck(Duck):
     def __init__(self):
         super().__init__(FlyWithWings())
 
-    def display():
+    def display(self):
         print("Soy un pato MallarDuck")
     
 class RedHeadDuck(Duck):
@@ -42,12 +42,14 @@ class RedHeadDuck(Duck):
     def __init__(self):
         super().__init__(FlyWithWings())
 
-    def display():
+    def display(self):
         print("Soy un pato RedHeadDuck")
 
 class RubberDuck(Duck):
     def __init__(self):
         super().__init__(FlyNoWay())
 
-    def display():
+    def display(self):
         print("Soy un pato de goma")
+
+
