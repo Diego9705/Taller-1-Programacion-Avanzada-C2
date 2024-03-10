@@ -47,7 +47,7 @@ class Campeon:
         self.movimiento.tipo_movimiento()
 
     def discurso(self):
-        print("Por demacia")
+        print("Hola")
 
 class Garen_caballero(Campeon):
     def __init__(self):
